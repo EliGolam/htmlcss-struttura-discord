@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- METADATA -->
+<head>
+    <title>Discord | Your Place to Talk and Hangout</title>
+    <!-- Icon -->
+    <link rel="icon" href="./assets/images/discord-page-logo.png">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap" rel="stylesheet"> 
+
+    <!-- my css -->
+    <link rel="stylesheet" href="./stylesheets/css-reset.css">
+    <link rel="stylesheet" href="./stylesheets/style.css">
+</head>
+
+<!-- BODY -->
+<!-- Try GROUPING class attributes 
+Order: Main BLOCK Class  other BLOCK Classes   Utility/Design Classes  
+Logical choice to make things look more organized, but they are not fundamental -->
+<body>
+    <!-- Main header - with hero background image -->
+    <header>
+        <nav class="navigation"> <!-- Flex Row with nowrap -->
+            <!-- Discord Clickable Logo aligned to the left -->
+            <a href="#">
+                <div class="discord-logo"></div>
+            </a> 
+
+            <!-- 5 Clickable links -->
+            <a href="#">Scarica</a>
+            <a href="#">Perché Discord</a>
+            <a href="#">Nitro</a>
+            <a href="#">Sicurezza</a>
+            <a href="#">Assistenza</a>
+
+            <!-- Bottone Accedi per Login -->
+            <button class="login  ui-button" type="button">Accedi</button>
+        </nav>
+
+        <!-- Padded Section with header__info -->
+        <section class="header__info"> 
+            <!-- header__info H1: centered -->
+            <h1>Il tuo posto per parlare</h1>
+            <p>Che tu faccia parte di un club scolastico, gruppo di gamer, comunità artistica mondiale, o semplicemente un piccolo gruppo di amici che vuole passare il tempo assieme, Discord rende più facile chiaccherare ogni giorno e ritrovarsi più spesso.</p>
+        </section>
+
+        <!-- Two inline buttons -->
+        <button class="ui-button">Scarica per Mac</button>
+        <button class="ui-button">Apri Discord nel tuo browser</button>
+    </header>
+
+    <!-- Main container: Flex Column, with 4  rows and images -->
+    <main class="container">
+        <section class="container__content">
+            <h2>Un luogo a invito con tutto lo spazio necessario per parlare</h2>
+            <p>I server Discord sono organizzati in canali tematici in cui puoi collaborare, condividere o semplicemente parlare della tua giornata senza intasare una chat di gruppo.</p>
+        </section>
+        <section class="container__content">
+            <h2>Dove trovarsi è facile</h2>
+            <p>Mettiti comodo in un canale vocale quando hai tempo. Gli amici nel tuo server possono vedere che sei lì e unirsi istantaneamente senza dover chiamare.</p>
+        </section>
+        <section class="container__content">
+            <h2>Da pochi a un fandom</h2>
+            <p>Dai inizio a una community con strumenti di moderazione e accesso ai membri personalizzabile. Concedi ai membri poteri speciali, crea canali privati e molto altro.</p>
+        </section>
+        <section class="container__content">
+            <h2>Tecnologia affidabile per tenersi in contatto</h2>
+            <p>Video e audio a bassa latenza ti faranno sentire come se foste tutti nella stessa stanza. Fai ciao in video, guarda gli amici giocare in streaming, o riunitevi in una sessione di disegno con la condivisione schermo.</p>
+        </section>
+    </main>
+</body>
+
+</html>
