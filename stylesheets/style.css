@@ -2,7 +2,7 @@
 /* These are some generic design choices for colour schemes, fonts and backgrounds */
 :root {
     /* Website Color Scheme */
-    --clr-primary: rgba(87, 242, 178, 1);
+    --clr-primary: rgb(37, 119, 212);
     --clr-secondary: rgba(250, 174, 95, 1);
 
     --clr-neutral-white: rgba(246, 242, 233, 1);
@@ -20,20 +20,98 @@
     --fontsize-large: 2rem;
     --fontsize-title: 3rem;
 
-    --gap: 1rem;
-    --flow-spacer: 1em;
+    --side-margin: 350px;
+    --content-width: 800px;
+    --flow-spacer: 1rem;
 }
 
 body {
     font-family: var(--fontfamily-primary);
 }
 
+.hidden-content {
+    display: none;
+}
 /* COMPOSITION: Macrolevel design choises that defines the skeleton of the webpage and basic composition within components */
 /* Page Layout choices */
+.flex { display: flex; }
+
+.column {flex-direction: column;}
+
+.row-reverse {flex-direction: row-reverse;}
+
+.flex-wrap {flex-wrap: wrap;}
+
+.content-width { max-width: 900px; margin: 0 auto; }
+
+.flow > * { margin-top: 1rem;}
 
 /* Component Layout choices */
+/* HEADER */
+.main-header { 
+    min-height: 400px;
+
+    background-image: url(../assets/images/hero-bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.navigation {
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.discord-logo {
+    min-width: 100px;
+}
+
+.navigation__links {
+    /* as flex-item */
+    flex-grow: 3;
+    max-width: 450px;
+
+    /* as flex-container */
+    justify-content: space-between;
+}
+
+.header__info {
+    max-width: 75ch;
+    margin: 0 auto;
+    padding: 3rem 0;
+    
+    text-align: center;
+}
+
+/* MAIN-CONTAINER */
+.main-container {
+    row-gap: 200px;
+}
+
+.main-section {
+    align-items: center;
+
+    min-height: 50vh;
+}
+
+.main-section__image {
+    flex-shrink: 1;
+}
+
+.main-section__content {
+    flex-basis: 50%;
+    flex-grow: 0;
+}
+
+/* FOOTER */
+.footer-container {
+    justify-content: space-between;
+}
 
 /* UTILITIES: One job, done well. It performs one logical job: formatting, design, shape, font and element colours  */
+.navigation__links a {
+    color: var(--clr-neutral-white);
+}
+
 /* Color schemes divided into scalable Design Tokens: allows to apply a specific set of colours without repetition */
 .background-light { background-color: var(--clr-neutral-white); }
 
