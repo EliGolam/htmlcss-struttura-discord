@@ -21,29 +21,29 @@
     <link rel="stylesheet" href="./stylesheets/style.css">
 </head>
 
-<!-- BODY -->
 <!-- Try GROUPING class attributes 
 Order: Main BLOCK Class  other BLOCK Classes   Utility/Design Classes  
 Logical choice to make things look more organized, but they are not fundamental -->
+
+<!-- BODY -->
 <body>
-    <!-- Main header - with hero background image -->
-    <header class="main-header  background-primary text-colour-light">
+    <!-- PAGE HEADER - with hero background image -->
+    <header class="page-header  background-primary text-colour-light">
+
+        <!-- Top NAVIGATION bar: containers Discord-Logo (clickable), inline links and a login button -->
         <nav class="navigation flex content-width flow"> <!-- Flex Row with nowrap -->
             <!-- Discord Clickable Logo aligned to the left -->
-            <a href="#">
-                <img src="./assets/images/logo.svg" alt="" class="discord-logo" />
-            </a> 
+            <a href="https://discord.com/" target="_blank"><img src="./assets/images/logo.svg" alt="Discord Logo" class="discord-logo" /></a> 
             
             <!-- 5 Clickable links -->
             <ul class="navigation__links flex">
-                <li><a href="#">Scarica</a></li>
-                <li><a href="#">Perché Discord</a></li>
-                <li><a href="#">Nitro</a></li>
-                <li><a href="#">Sicurezza</a></li>
-                <li><a href="#">Assistenza</a></li>
+                <li><a href="https://discord.com/download" target="_blank">Scarica</a></li>
+                <li><a href="https://discord.com/blog" target="_blank">Perché Discord</a></li>
+                <li><a href="https://discord.com/nitro" target="_blank">Nitro</a></li>
+                <li><a href="https://discord.com/safety" target="_blank">Sicurezza</a></li>
+                <li><a href="https://support.discord.com/hc/en-us" target="_blank">Assistenza</a></li>
             </ul>
                   
-
             <!-- Bottone Accedi per Login -->
             <button class="login  ui-button" type="button">Accedi</button>
         </nav>
@@ -51,11 +51,11 @@ Logical choice to make things look more organized, but they are not fundamental 
         <!-- Padded Section with header__info -->
         <section class="header__info  flow"> 
             <!-- header__info H1: centered -->
-            <h1>Il tuo posto per parlare</h1>
+            <h1 id="page-title">Il tuo posto per parlare</h1>
             <p>Che tu faccia parte di un club scolastico, gruppo di gamer, comunità artistica mondiale, o semplicemente un piccolo gruppo di amici che vuole passare il tempo assieme, Discord rende più facile chiaccherare ogni giorno e ritrovarsi più spesso.</p>
             <!-- Two inline buttons -->
-            <button class="ui-button">Scarica per Mac</button>
-            <button class="ui-button">Apri Discord nel tuo browser</button>
+            <button class="download-button  header-button ui-button">Scarica per Mac</button>
+            <button class="open-web-discord  header-button ui-button background-dark text-colour-light">Apri Discord nel tuo browser</button>
         </section>
     </header>
 
