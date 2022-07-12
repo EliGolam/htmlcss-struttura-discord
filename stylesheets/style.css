@@ -6,7 +6,7 @@
     --clr-secondary: rgba(250, 174, 95, 1);
 
     --clr-neutral-white: rgba(246, 242, 233, 1);
-    --clr-neutral-black: rgba(25, 25, 25, 1);
+    --clr-neutral-black: rgba(35, 39, 42, 1);
     --clr-neutral-black-transparent: rgba(25, 25, 25, 0.3);
     --clr-neutral-grey: rgb(211, 214, 216);
 
@@ -48,7 +48,7 @@ body {
 
 .flex-wrap { flex-wrap: wrap; }
 
-.content-width { max-width: var(--content-width); margin: 0 auto; }
+.content-width { max-width: var(--content-width); margin: 0 auto; padding: 0 1rem;}
 
 .flow > * { margin-top: 1rem; }
 
@@ -174,6 +174,10 @@ body {
     min-height: 70vh;
 }
 
+.main-section:last-child .main-section__content {
+    flex-basis: 15rem;
+}
+
 .main-section__image {
     height: 400px;
     width: 670px;
@@ -194,6 +198,12 @@ body {
     line-height: 1.25;
 }
 /* EXCEPTIONS: variations to a block */
+#bottom-download-prompt {
+    padding: 2rem 3rem;
+    background-image: url(../assets/images/sparkles.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 
 /* MEDIA QUERIES */
 @media screen and (max-width:700px) {
