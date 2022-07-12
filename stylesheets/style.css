@@ -9,11 +9,13 @@
     --clr-neutral-black: rgba(25, 25, 25, 1);
     --clr-neutral-grey: rgba(88, 89, 90, 1);
 
+    /* Website Fonts */
     --fontfamily-primary: 'Roboto', Arial, Helvetica, sans-serif;
 
     --fontweight-thin: 200;
     --fontweight-normal: 400;
     --fontweight-heavy: 700;
+    --fontweight-bold: 900;
 
     --fontsize-small: 0.7rem;
     --fontsize-normal: 1.1rem;
@@ -27,11 +29,14 @@
 
 body {
     font-family: var(--fontfamily-primary);
+    font-size: var(--fontsize-normal);
+    font-weight: var(--fontweight-normal);
 }
 
 .hidden-content {
     display: none;
 }
+
 /* COMPOSITION: Macrolevel design choises that defines the skeleton of the webpage and basic composition within components */
 /* Page Layout choices */
 .flex { display: flex; }
@@ -89,12 +94,18 @@ body {
 
 .main-section {
     align-items: center;
+    justify-content: space-between;
 
     min-height: 50vh;
 }
 
 .main-section__image {
-    flex-shrink: 1;
+    height: 400px;
+    width: 700px;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .main-section__content {
@@ -111,6 +122,11 @@ body {
 .navigation__links a {
     color: var(--clr-neutral-white);
 }
+
+.image-section-1 { background-image: url(../assets/images/section-1.svg); }
+.image-section-2 { background-image: url(../assets/images/section-2.svg); }
+.image-section-3 { background-image: url(../assets/images/section-3.svg); }
+.image-section-4 { background-image: url(../assets/images/section-4.svg); }
 
 /* Color schemes divided into scalable Design Tokens: allows to apply a specific set of colours without repetition */
 .background-light { background-color: var(--clr-neutral-white); }
