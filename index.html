@@ -90,7 +90,7 @@ Logical choice to make things look more organized, but they are not fundamental 
                 </div>       
             </div>        
         </section>
-        <section class="main-section">
+        <section class="main-section download-section flow">
             <div class="flex column content-width">
                 <div class="main-section__content flow">
                     <h3>Tecnologia affidabile per tenersi in contatto</h3>
@@ -107,10 +107,10 @@ Logical choice to make things look more organized, but they are not fundamental 
     <!-- Footer: flex with 5 columns -->
     <footer class="page-footer background-dark text-colour-light">
         <h2 class="hidden-content">Link di navigazione fine pagina</h2>
-        <div class="footer-container  content-width flex flow">
-            <section>
+        <div class="footer-container  content-width flex flex-wrap flow">
+            <section class="footer-info">
                 <h3>Il tuo posto per parlare</h3>
-                <p>Italiano</p>
+                <p id="page-lang">Italiano</p>
                 <div class="social-links"></div>
             </section>
             <section>
@@ -158,6 +158,11 @@ Logical choice to make things look more organized, but they are not fundamental 
                     <li>Assistenza</li>
                 </ul>
             </section>
+        </div>
+
+        <div class="bottom-section flex content-width">
+            <a href="https://discord.com/" target="_blank"><img src="./assets/images/logo.svg" alt="Discord Logo" class="discord-logo" /></a> 
+            <button class="login  ui-button" type="button">Registrati</button>
         </div>
     </footer>
 </body>

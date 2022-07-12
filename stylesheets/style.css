@@ -3,7 +3,7 @@
 :root {
     /* Website Color Scheme */
     --clr-primary: rgb(37, 119, 212);
-    --clr-secondary: rgba(250, 174, 95, 1);
+    --clr-secondary: rgba(88, 101, 242, 1);
 
     --clr-neutral-white: rgba(246, 242, 233, 1);
     --clr-neutral-black: rgba(35, 39, 42, 1);
@@ -55,7 +55,7 @@ body {
 /* Component Layout choices */
 /* HEADER */
 .page-header { 
-    min-height: 620px;
+    min-height: 650px;
     padding: .5rem 0;
 
     background-image: url(../assets/images/hero-bg.jpg);
@@ -173,14 +173,22 @@ body {
     min-height: 70vh;
 }
 
-.main-section:last-child .main-section__content {
+.download-section .main-section__content {
     flex-basis: 15rem;
     text-align: center;
+
+    max-width: 65ch;
+}
+
+.download-section {
+    padding: 6rem 1rem;
 }
 
 .main-section__image {
     height: 400px;
     width: 670px;
+
+    flex-grow: 2;
 
     background-size: contain;
     background-repeat: no-repeat;
@@ -197,6 +205,37 @@ body {
     font-weight: var(--fontweight-heavy);
     line-height: 1.25;
 }
+
+/* FOOTER */
+.page-footer {
+    padding: 3rem 1rem;
+    font-size: var(--fontsize-small);
+    font-weight: var(--fontweight-thin);
+}
+
+
+.page-footer h3 {
+    font-weight: var(--fontweight-thin);
+    color: var(--clr-secondary);
+}
+
+.footer-info {
+    flex-basis: 35%;
+}
+
+.footer-info h3 {
+    font-size: var(--fontsize-large);
+    font-weight: var(--fontweight-heavy);
+}
+
+.bottom-section {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 2px solid var(--clr-secondary);
+
+    justify-content: space-between;
+}
+
 /* EXCEPTIONS: variations to a block */
 #bottom-download-prompt {
     padding: 2rem 3rem;
