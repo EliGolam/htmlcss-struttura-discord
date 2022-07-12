@@ -8,7 +8,7 @@
     --clr-neutral-white: rgba(246, 242, 233, 1);
     --clr-neutral-black: rgba(35, 39, 42, 1);
     --clr-neutral-black-transparent: rgba(25, 25, 25, 0.3);
-    --clr-neutral-grey: rgb(211, 214, 216);
+    --clr-neutral-grey: rgb(245, 248, 250);
 
     /* Website Fonts */
     --fontfamily-primary: 'Roboto', Arial, Helvetica, sans-serif;
@@ -164,7 +164,9 @@ body {
 
 
 /* MAIN CONTAINER */
-.main-section {
+.main-container .main-section:nth-child(odd) { background-color: var(--clr-neutral-grey);}
+
+.main-section .flex {
     align-items: center;
     justify-content: space-between;
 
@@ -173,13 +175,14 @@ body {
 
 .main-section:last-child .main-section__content {
     flex-basis: 15rem;
+    text-align: center;
 }
 
 .main-section__image {
     height: 400px;
     width: 670px;
 
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
